@@ -66,6 +66,7 @@ const pldata = [
     movies: []
   }
 ]
+// movie array for search, replace with search results
 const movieData= [
   {
     "Title": "Harry Potter and the Deathly Hallows: Part 2",
@@ -567,11 +568,26 @@ function App() {
     }])
   }
 
-  const onSearchMovies = (input) => {
-   console.log("hello")
+  const onSearchMovies = async (searchInput) => {
+   // API request
+   const result = await fetchMovies(searchInput)
+   console.log(result)
+   setMovies(result)
+   // also (not here): list item key = imdbID
   }
 
+  const fetchMovies =  async (searchInput) => {
+    // search parameters:
+      // 's' returns array.
+      // 't' returns single movie, with more info
+    let url = `http://www.omdbapi.com/?s=${searchInput}&apikey=${process.env.REACT_APP_OMDB_API_KEY}`
 
+    // afetch/async await function
+    const res = await fetch(url)
+    const data = await res.json()
+
+    return data.Search
+  }
 
 
 
@@ -582,12 +598,13 @@ function App() {
         setOpen={setOpen}
         onSearch={onSearchMovies}
         />
-      <div className='flex'>
 
+      <div className='flex'>
         <Sidebar
           playlists={playlists}
           onSave={onSavePlaylist}
           isOpen={isOpen} />
+
         <main className={`p-16 ${isOpen ? 'translate-x-[204px]' : 'translate-x-0' } ease-in-out duration-700 flex-grow bg-stone-900`}>
           <h1 className="z-10 mb-16 text-4xl font-bold text-left top-32 text-stone-200">Home</h1>
           <div className="movie-grid">

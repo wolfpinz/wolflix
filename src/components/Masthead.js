@@ -9,6 +9,7 @@ const Masthead = ({ isOpen, setOpen, onSearch }) => {
     setSearchInput(e.target.value)
   }
 
+
   return (
     <div className="sticky top-0 z-20 flex items-center justify-between flex-grow w-full p-4 bg-stone-900">
 
