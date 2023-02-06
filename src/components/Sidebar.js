@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { MdPlaylistPlay } from "react-icons/md";
 import { TiHome } from "react-icons/ti";
 import AddPlaylistForm from "./AddPlaylistForm";

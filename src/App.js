@@ -3,7 +3,8 @@ import { React, useState } from 'react';
 import Masthead from "./components/Masthead";
 import Sidebar from "./components/Sidebar";
 import MovieCard from './components/MovieCard';
-import { IoAddCircleOutline } from "react-icons/io5";
+import Modal from './components/Modal';
+import { RxHalf2 } from 'react-icons/rx';
 
 
 
@@ -11,47 +12,7 @@ const pldata = [
   {
     id: 1,
     title: "Adventure",
-    movies: [
-      {
-        "Title": "Harry Potter and the Deathly Hallows: Part 2",
-        "Year": "2011",
-        "Rated": "PG-13",
-        "Released": "15 Jul 2011",
-        "Runtime": "130 min",
-        "Genre": "Adventure, Family, Fantasy",
-        "Director": "David Yates",
-        "Writer": "Steve Kloves, J.K. Rowling",
-        "Actors": "Daniel Radcliffe, Emma Watson, Rupert Grint",
-        "Plot": "Harry, Ron, and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.",
-        "Language": "English, Latin",
-        "Country": "United Kingdom, United States",
-        "Awards": "Nominated for 3 Oscars. 47 wins & 94 nominations total",
-        "Poster": "https://m.media-amazon.com/images/M/MV5BMGVmMWNiMDktYjQ0Mi00MWIxLTk0N2UtN2ZlYTdkN2IzNDNlXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
-        "Ratings": [
-          {
-          "Source": "Internet Movie Database",
-          "Value": "8.1/10"
-          },
-          {
-          "Source": "Rotten Tomatoes",
-          "Value": "96%"
-          },
-          {
-          "Source": "Metacritic",
-          "Value": "85/100"
-          }
-          ],
-        "imdbRating": "8.1",
-        "imdbVotes": "882,427",
-        "imdbID": "tt1201607",
-        "Type": "movie",
-        "DVD": "11 Nov 2011",
-        "BoxOffice": "$381,447,587",
-        "Production": "N/A",
-        "Website": "N/A",
-        "Response": "True"
-      }
-    ]
+    movies: []
   },
   {
     id: 2,
@@ -553,87 +514,15 @@ const movieData= [
   }
 ]
 
-
-
-// const BoxComponent = () => {
-//   return (
-//     <div className="absolute top-[300px] left-[110px] bg-stone-900 text-stone-300 z-10 overflow-visible">
-//       <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
-//       <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-//         <option selected>Select a Playlist</option>
-//         <option value="US">Adventure</option>
-//         <option value="CA">Comedy</option>
-//         <option value="FR">Slowburn</option>
-//         <option value="DE">Crime</option>
-//       </select>
-//     </div>
-//   )
-// }
-const Modal = ({ onClose, movie }) => {
-
-  return (
-    <div>
-      {/* // <!-- Main modal --> */}
-      <div id="defaultModal" tabIndex="-1" aria-hidden="true" className="fixed top-0 left-0 right-0 z-40 w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
-          <div className="relative z-50 flex w-full h-full max-w-2xl md:h-auto -translate-x-2/4 -translate-y-2/4 top-2/4 left-2/4 ">
-              {/* <!-- Modal content --> */}
-            <img src={movie.Poster} alt="" />
-            <div className="relative shadow bg-stone-900 dark:bg-gray-700 text-stone-200">
-                {/* <!-- Modal header --> */}
-                <div className="flex items-start justify-between p-4 rounded-t dark:ray-600">
-                    <h3 className="text-xl font-semibold text-stone-300 dark:text-white">
-                        {movie.Title}
-                    </h3>
-                    <button onClick={onClose} type="button" className="text-stone-400 bg-transparent hover:bg-stone-200 hover:text-stone-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-stone-600 dark:hover:text-white" data-modal-hide="defaultModal">
-                        <svg aria-hidden="true" className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-                        <span className="sr-only">Close modal</span>
-                    </button>
-                </div>
-                {/* <!-- Modal body --> */}
-                <div className="p-6 space-y-6">
-                  <div className='flex justify-between'>
-                    <span>{movie.Year}</span>
-                    <span>{movie.Runtime}</span>
-                    <span>{movie.imdbRating}</span>
-                  </div>
-                    <p className="text-base leading-relaxed text-stone-300 dark:text-stone-400">
-                        {movie.Plot}
-                    </p>
-                </div>
-
-                {/* <!-- Modal footer --> */}
-                <div className="flex items-center justify-between p-6 space-x-2">
-
-                  <select id="movie-select" class="bg-stone-900 border border-stone-700 text-stone-300 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 p-2.5">
-                    <option selected>add to playlist</option>
-                    <option value="US">Adventure</option>
-                    <option value="CA">Comedy</option>
-                    <option value="FR">Slowburn</option>
-                    <option value="DE">Crime</option>
-                  </select>
-                  {/* Add Button / Icon */}
-                  <IoAddCircleOutline
-                  // onClick={onAdd}
-                    className='text-5xl text-stone-300'/>
-                  {/* <label for="movie" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label> */}
-
-                  {/* <button data-modal-hide="defaultModal" type="button" className="text-stone-300 bg-white hover:bg-stone-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-300 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button> */}
-                </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  )
-}
-
 function App() {
 
-  const [movies, setMovies] = useState(movieData)
+  const [movies, setMovies] = useState("")
   const [playlists, setPlaylists] = useState(pldata)
   const [isOpen, setOpen] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
   const [clickedMovie, setClickedMovie] = useState(false)
 
+  // console.log(playlists, movies)
 
   const onSavePlaylist = (title) => {
     // set next ID
@@ -648,10 +537,10 @@ function App() {
   }
 
   const onSearchMovies = async (searchInput) => {
-   // API request
-   const result = await fetchMovies(searchInput)
-   setMovies(result)
-   // also (not here): list item key = imdbID
+
+    const result = await fetchMovies(searchInput)
+    console.log(result)
+    setMovies(result)
   }
 
   const fetchMovies =  async (searchInput) => {
@@ -667,16 +556,19 @@ function App() {
     return data.Search
   }
 
-  // const closeModal = (e) => {
-  //   e.stopPropagation();
-  //   if (modalOpen) {
-  //     setModalOpen(!modalOpen)
-  //   }
-  // }
   const handleCardClick = ( movie ) => {
     setClickedMovie(movie)
     setModalOpen(!modalOpen)
   }
+
+  const addMovieToPlaylist = (playlistTitle, movie) => {
+    // update object: iterate, where same id (or other property): return different object, else return itself
+    setPlaylists(playlists.map(playlist => {
+      return playlist.title === playlistTitle ? {...playlist, movies: [...playlist.movies, movie]} : playlist
+    }))
+    // console.log("was added")
+  }
+
 
 
   return (
@@ -684,13 +576,19 @@ function App() {
       // onClick={closeModal}
       className="App bg-stone-900">
 
-        { modalOpen && <Modal movie={clickedMovie} onClose={() => setModalOpen(!modalOpen)} />}
+        { modalOpen &&
+        <Modal
+          playlists={playlists}
+          movie={clickedMovie}
+          onClose={() => setModalOpen(!modalOpen)}
+          onAdd={addMovieToPlaylist}
+        />}
 
         <Masthead
           isOpen={isOpen}
           setOpen={setOpen}
           onSearch={onSearchMovies}
-          />
+        />
 
 
         <div className='flex'>
@@ -701,6 +599,8 @@ function App() {
 
           <main className={`p-16 ${isOpen ? 'translate-x-[204px] mr-48' : 'translate-x-0' } ease-in-out duration-700 flex-grow bg-stone-900`}>
             <h1 className="z-10 mb-16 text-4xl font-bold text-left top-32 text-stone-200">Home</h1>
+            {!movies ? <h2>Browse movies</h2>
+            :
             <div className="movie-grid">
               {/* map all movies in moviedata to card in grid */}
               {/* {console.log(movies)} */}
@@ -711,6 +611,8 @@ function App() {
                   onCardClick={handleCardClick} />
               ))}
             </div>
+
+            }
 
           </main>
         </div>

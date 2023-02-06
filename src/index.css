@@ -52,7 +52,7 @@ h1 {
   row-gap: 2rem;
   column-gap: 1rem;
 }
-
+/*
 @keyframes cardEntrance {
   from {
     opacity: 0;
@@ -62,7 +62,7 @@ h1 {
     opacity: 1;
     transform: scale(1);
   }
-}
+} */
 
 
 /* card */
