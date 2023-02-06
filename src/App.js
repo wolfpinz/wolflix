@@ -605,7 +605,7 @@ function App() {
           onSave={onSavePlaylist}
           isOpen={isOpen} />
 
-        <main className={`p-16 ${isOpen ? 'translate-x-[204px]' : 'translate-x-0' } ease-in-out duration-700 flex-grow bg-stone-900`}>
+        <main className={`p-16 ${isOpen ? 'translate-x-[204px] mr-48' : 'translate-x-0' } ease-in-out duration-700 flex-grow bg-stone-900`}>
           <h1 className="z-10 mb-16 text-4xl font-bold text-left top-32 text-stone-200">Home</h1>
           <div className="movie-grid">
             {/* map all movies in moviedata to card in grid */}
