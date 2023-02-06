@@ -1,12 +1,14 @@
-import { IoAddCircleOutline } from "react-icons/io5";
 
-const MovieCard = ({ movie }) => {
+
+
+const MovieCard = ({ movie, onCardClick }) => {
+
+
   return (
-    <article className="movie-card">
+    <article onClick={() => {onCardClick(movie)}} className="relative movie-card">
       <img src={movie.Poster} alt="" />
-      <div title="Add to Watchlist" className="bottom bg-stone-600 ">
+      <div title="Add to Watchlist" className="">
       </div>
-      <IoAddCircleOutline className='text-5xl text-stone-300'/>
     </article>
   )
 }

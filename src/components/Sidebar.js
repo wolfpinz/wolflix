@@ -7,10 +7,6 @@ import Button from "./Button";
 
 const Sidebar = ({ isOpen, playlists, onSave}) => {
   const [formShow, setFormShow] = useState(false)
-  console.log(onSave);
-
-
-
 
   return (
     <div className={`fixed min-w-[140px] h-screen left-0 p-4 text-stone-300 text-l
