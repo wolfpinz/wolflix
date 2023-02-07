@@ -4,9 +4,9 @@ import { React, useState } from 'react';
 
 
 const Modal = ({ onClose, movie, playlists, onAdd }) => {
-  const  [selectedPlaylistTitle, setSelectedPlaylistTitle] = useState("")
+  const  [selectedPlaylistID, setSelectedPlaylistID] = useState("")
 
-
+  // console.log(selectedPlaylistID)
   return (
     <div>
       {/* // <!-- Main modal --> */}
@@ -14,7 +14,8 @@ const Modal = ({ onClose, movie, playlists, onAdd }) => {
           <div className="relative z-50 flex w-full h-full max-w-2xl md:h-auto -translate-x-2/4 -translate-y-2/4 top-2/4 left-2/4 ">
               {/* <!-- Modal content --> */}
             <img src={movie.Poster} alt="" />
-            <div className="relative shadow bg-stone-900 dark:bg-gray-700 text-stone-200">
+            <div className="relative shadow bg-stone-800 text-stone-200">
+            {/* dark:bg-gray-700 */}
                 {/* <!-- Modal header --> */}
                 <div className="flex items-start justify-between p-4 rounded-t dark:ray-600">
                     <h2 className="text-xl font-semibold text-stone-300 dark:text-white">
@@ -40,19 +41,19 @@ const Modal = ({ onClose, movie, playlists, onAdd }) => {
                 {/* <!-- Modal footer --> */}
 
                 <div className="absolute bottom-0 w-full p-6 space-x-2">
-                  <h3 className='p-2.5'>Save this film?</h3>
+                  <h3 className='p-2.5'><span className="text-orange-500">Save</span> this film?</h3>
                   <div className='flex items-center justify-between'>
-                  <select onChange={(e) => {setSelectedPlaylistTitle(e.target.value)}} id="movie-select" class="bg-stone-900 border border-stone-700 text-stone-500 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 p-2.5">
+                  <select onChange={(e) => {setSelectedPlaylistID(e.target.selectedOptions[0].value)}} id="movie-select" class="bg-stone-900 border border-stone-700 text-stone-500 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 p-2.5">
                     <option disabled selected hidden>select playlist</option>
 
-                    {playlists.map(playlist => <option value={playlist.title}>{playlist.title}</option> )}
+                    {playlists.map(playlist => <option value={playlist.id}>{playlist.title}</option> )}
 
                   </select>
                   {/* Add Button / Icon */}
                   <IoAddCircleOutline
-                    // onClick={() => {console.log(selectedPlaylistTitle, movie)}}
-                    onClick={() => {onAdd(selectedPlaylistTitle, movie) }}
-                    className='text-6xl text-stone-300'/>
+                    // onClick={() => {console.log(selectedPlaylistID, movie)}}
+                    onClick={() => {onAdd(selectedPlaylistID, movie)}}
+                    className='text-6xl text-stone-300 hover:text-orange-600'/>
                   </div>
                   {/* <label for="movie" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label> */}
 

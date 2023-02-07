@@ -6,12 +6,16 @@ const AddPlaylistForm = ({ onSave }) => {
   const handleInput = (e) => {
     setTitle(e.target.value)
   }
+  const newPlaylist = {
+    title: title,
+    movies: []
+  }
 
   return (
     <form className='relative'
       onSubmit={e => {
         e.preventDefault()
-        onSave(title)
+        onSave(newPlaylist)
       }}
     >
       <div className='flex items-center'>

@@ -1,0 +1,357 @@
+{
+  "playlists": [
+    {
+      "id": 1,
+      "title": "Adventure",
+      "movies": []
+    },
+    {
+      "id": 2,
+      "title": "Comedy",
+      "movies": []
+    },
+    {
+      "id": 3,
+      "title": "Slowburn",
+      "movies": []
+    },
+    {
+      "id": 4,
+      "title": "Crime",
+      "movies": []
+    }
+  ],
+  "movies": [
+    {
+      "playlistID": "1",
+      "Title": "Harry Potter and the Prisoner of Azkaban",
+      "Year": "2004",
+      "Rated": "PG",
+      "Released": "04 Jun 2004",
+      "Runtime": "142 min",
+      "Genre": "Adventure, Family, Fantasy",
+      "Director": "Alfonso Cuarón",
+      "Writer": "J.K. Rowling, Steve Kloves",
+      "Actors": "Daniel Radcliffe, Emma Watson, Rupert Grint",
+      "Plot": "Harry Potter, Ron and Hermione return to Hogwarts School of Witchcraft and Wizardry for their third year of study, where they delve into the mystery surrounding an escaped prisoner who poses a dangerous threat to the young wizard.",
+      "Language": "English, Latin, Old English",
+      "Country": "United Kingdom, United States",
+      "Awards": "Nominated for 2 Oscars. 17 wins & 53 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.9/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "90%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "82/100"
+        }
+      ],
+      "Metascore": "82",
+      "imdbRating": "7.9",
+      "imdbVotes": "641,720",
+      "imdbID": "tt0304141",
+      "Type": "movie",
+      "DVD": "23 Nov 2004",
+      "BoxOffice": "$250,105,651",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "id": 1
+    },
+    {
+      "playlistID": "2",
+      "Title": "Harry Potter and the Sorcerer's Stone",
+      "Year": "2001",
+      "Rated": "PG",
+      "Released": "16 Nov 2001",
+      "Runtime": "152 min",
+      "Genre": "Adventure, Family, Fantasy",
+      "Director": "Chris Columbus",
+      "Writer": "J.K. Rowling, Steve Kloves",
+      "Actors": "Daniel Radcliffe, Rupert Grint, Richard Harris",
+      "Plot": "An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.",
+      "Language": "English, Latin",
+      "Country": "United Kingdom, United States",
+      "Awards": "Nominated for 3 Oscars. 18 wins & 69 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNmQ0ODBhMjUtNDRhOC00MGQzLTk5MTAtZDliODg5NmU5MjZhXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.6/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "81%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "65/100"
+        }
+      ],
+      "Metascore": "65",
+      "imdbRating": "7.6",
+      "imdbVotes": "789,022",
+      "imdbID": "tt0241527",
+      "Type": "movie",
+      "DVD": "28 May 2002",
+      "BoxOffice": "$318,886,962",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "id": 2
+    },
+    {
+      "playlistID": "1",
+      "Title": "Django Unchained",
+      "Year": "2012",
+      "Rated": "R",
+      "Released": "25 Dec 2012",
+      "Runtime": "165 min",
+      "Genre": "Drama, Western",
+      "Director": "Quentin Tarantino",
+      "Writer": "Quentin Tarantino",
+      "Actors": "Jamie Foxx, Christoph Waltz, Leonardo DiCaprio",
+      "Plot": "With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a brutal plantation-owner in Mississippi.",
+      "Language": "English, German, French, Italian",
+      "Country": "United States",
+      "Awards": "Won 2 Oscars. 58 wins & 158 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.4/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "87%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "81/100"
+        }
+      ],
+      "Metascore": "81",
+      "imdbRating": "8.4",
+      "imdbVotes": "1,565,192",
+      "imdbID": "tt1853728",
+      "Type": "movie",
+      "DVD": "16 Apr 2013",
+      "BoxOffice": "$162,805,434",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "id": 3
+    },
+    {
+      "playlistID": "4",
+      "Title": "The Matrix Revolutions",
+      "Year": "2003",
+      "Rated": "R",
+      "Released": "05 Nov 2003",
+      "Runtime": "129 min",
+      "Genre": "Action, Sci-Fi",
+      "Director": "Lana Wachowski, Lilly Wachowski",
+      "Writer": "Lilly Wachowski, Lana Wachowski",
+      "Actors": "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
+      "Plot": "The human city of Zion defends itself against the massive invasion of the machines as Neo fights to end the war at another front while also opposing the rogue Agent Smith.",
+      "Language": "English, French",
+      "Country": "United States, Australia",
+      "Awards": "5 wins & 36 nominations",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNzNlZTZjMDctZjYwNi00NzljLWIwN2QtZWZmYmJiYzQ0MTk2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.7/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "34%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "47/100"
+        }
+      ],
+      "Metascore": "47",
+      "imdbRating": "6.7",
+      "imdbVotes": "516,302",
+      "imdbID": "tt0242653",
+      "Type": "movie",
+      "DVD": "06 Apr 2004",
+      "BoxOffice": "$139,313,948",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "id": 4
+    },
+    {
+      "playlistID": "2",
+      "Title": "Kill Bill: Vol. 1",
+      "Year": "2003",
+      "Rated": "R",
+      "Released": "10 Oct 2003",
+      "Runtime": "111 min",
+      "Genre": "Action, Crime, Drama",
+      "Director": "Quentin Tarantino",
+      "Writer": "Quentin Tarantino, Uma Thurman",
+      "Actors": "Uma Thurman, David Carradine, Daryl Hannah",
+      "Plot": "After awakening from a four-year coma, a former assassin wreaks vengeance on the team of assassins who betrayed her.",
+      "Language": "English, Japanese, French",
+      "Country": "United States",
+      "Awards": "Nominated for 5 BAFTA 29 wins & 104 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNzM3NDFhYTAtYmU5Mi00NGRmLTljYjgtMDkyODQ4MjNkMGY2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.2/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "85%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "69/100"
+        }
+      ],
+      "Metascore": "69",
+      "imdbRating": "8.2",
+      "imdbVotes": "1,120,738",
+      "imdbID": "tt0266697",
+      "Type": "movie",
+      "DVD": "13 Apr 2004",
+      "BoxOffice": "$70,099,045",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "id": 5
+    },
+    {
+      "playlistID": "1",
+      "Title": "Iron Cowboy",
+      "Year": "2018",
+      "Rated": "N/A",
+      "Released": "26 Oct 2018",
+      "Runtime": "76 min",
+      "Genre": "Documentary, Sport",
+      "Director": "Jacob Schwarz",
+      "Writer": "N/A",
+      "Actors": "James Lawrence, Rich Roll",
+      "Plot": "When James Lawrence (aka the Iron Cowboy) announced his plan to complete 50 Ironman distances in 50 consecutive days in all 50 states, the only person who believed that he could pull it off was James himself. An Iron Man distance ...",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "N/A",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNzkyY2FlOWEtNjlkYi00OTUwLWExNzEtNTdmMjY4MWU2N2RlXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.6/10"
+        }
+      ],
+      "Metascore": "N/A",
+      "imdbRating": "6.6",
+      "imdbVotes": "519",
+      "imdbID": "tt6183106",
+      "Type": "movie",
+      "DVD": "N/A",
+      "BoxOffice": "N/A",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "id": 6
+    },
+    {
+      "playlistID": "3",
+      "Title": "The Lord of the Rings: The Two Towers",
+      "Year": "2002",
+      "Rated": "PG-13",
+      "Released": "18 Dec 2002",
+      "Runtime": "179 min",
+      "Genre": "Action, Adventure, Drama",
+      "Director": "Peter Jackson",
+      "Writer": "J.R.R. Tolkien, Fran Walsh, Philippa Boyens",
+      "Actors": "Elijah Wood, Ian McKellen, Viggo Mortensen",
+      "Plot": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+      "Language": "English, Sindarin, Old English",
+      "Country": "New Zealand, United States",
+      "Awards": "Won 2 Oscars. 130 wins & 138 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZGMxZTdjZmYtMmE2Ni00ZTdkLWI5NTgtNjlmMjBiNzU2MmI5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.8/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "95%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "87/100"
+        }
+      ],
+      "Metascore": "87",
+      "imdbRating": "8.8",
+      "imdbVotes": "1,676,152",
+      "imdbID": "tt0167261",
+      "Type": "movie",
+      "DVD": "26 Aug 2003",
+      "BoxOffice": "$342,952,511",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "id": 7
+    },
+    {
+      "playlistID": "4",
+      "Title": "Harry Potter and the Chamber of Secrets",
+      "Year": "2002",
+      "Rated": "PG",
+      "Released": "15 Nov 2002",
+      "Runtime": "161 min",
+      "Genre": "Adventure, Family, Fantasy",
+      "Director": "Chris Columbus",
+      "Writer": "J.K. Rowling, Steve Kloves",
+      "Actors": "Daniel Radcliffe, Rupert Grint, Emma Watson",
+      "Plot": "An ancient prophecy seems to be coming true when a mysterious presence begins stalking the corridors of a school of magic and leaving its victims paralyzed.",
+      "Language": "English, Latin",
+      "Country": "United Kingdom, United States",
+      "Awards": "Won 1 BAFTA Award13 wins & 46 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjE0YjUzNDUtMjc5OS00MTU3LTgxMmUtODhkOThkMzdjNWI4XkEyXkFqcGdeQXVyMTA3MzQ4MTc0._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.4/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "82%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "63/100"
+        }
+      ],
+      "Metascore": "63",
+      "imdbRating": "7.4",
+      "imdbVotes": "642,740",
+      "imdbID": "tt0295297",
+      "Type": "movie",
+      "DVD": "11 Apr 2003",
+      "BoxOffice": "$262,641,637",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "id": 8
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
